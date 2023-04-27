@@ -20,7 +20,7 @@ const Header = () => {
                 </Marquee>
             </div>
             </Container>
-            <Navbar className='my-3' bg="light" expand="lg">
+            <Navbar className='my-3  ' bg="light" expand="lg">
       <Container className=''>
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

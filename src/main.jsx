@@ -11,6 +11,10 @@ import "./index.css";
 import Main from './layous/Main.jsx';
 import Home from './pages/Home.jsx';
 
+import Category from './pages/Category.jsx';
+import NewsLayout from './layous/NewsLayout.jsx';
+import News from './pages/News.jsx';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,7 +23,25 @@ const router = createBrowserRouter([
       {
         path: "/",
         element:<Home/>
+      },
+      {
+        path: '/category/:id',
+        element: <Category></Category>,
+        loader: ({params}) => fetch(`http://localhost:5000/categories/${params.id}`)
+       
+    }, 
+    ]
+  },
+  {
+    path:"news",
+    element:<NewsLayout></NewsLayout>,
+    children: [
+      {
+        path: ':id',
+        element:<News></News>
+        //loader: ({params}) => fetch(`http://localhost:5000/news/${params.id}`)
       }
+  
     ]
   },
 ]);
