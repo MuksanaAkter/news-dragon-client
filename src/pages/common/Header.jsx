@@ -1,10 +1,10 @@
 import moment from 'moment/moment';
 import React from 'react';
-import { Button, Container, NavDropdown, Navbar,Nav } from 'react-bootstrap';
+import { Button, Container, Navbar,Nav } from 'react-bootstrap';
 import Marquee from "react-fast-marquee";
 const Header = () => {
     return (
-        <div>
+        <div className=''>
             <Container>
             <div className='text-center'>
            <h1 className=''>The News of Dragon Clints</h1>
@@ -20,8 +20,8 @@ const Header = () => {
                 </Marquee>
             </div>
             </Container>
-            <Navbar bg="light" expand="lg">
-      <Container>
+            <Navbar className='my-3' bg="light" expand="lg">
+      <Container className=''>
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

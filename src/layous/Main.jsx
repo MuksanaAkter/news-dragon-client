@@ -18,7 +18,7 @@ const Main = () => {
         <Col lg={3}>
             <LeftNav/>
         </Col>
-        <Col lg={6}>sm=true</Col>
+        <Col lg={6}>main section </Col>
         <Col lg={3}>
             <RightNav/>
         </Col>
